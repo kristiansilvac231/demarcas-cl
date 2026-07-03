@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeMarcas.cl — Registro de Marcas en Chile | Simple, transparente, profesional</title>
+  <meta name="description" content="Registra tu marca ante INAPI en Chile con precios claros y sin letra chica. Proceso 100% digital. Garantía de reintento gratis.">
+  <meta name="keywords" content="registro de marca chile, registrar marca inapi, registro marca comercial, demarcas">
+  <meta property="og:title" content="DeMarcas.cl — Registro de Marcas en Chile">
+  <meta property="og:description" content="Protege tu marca ante INAPI con precios transparentes y respaldo legal experto.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://demarcas.cl">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "DeMarcas.cl",
+    "description": "Servicio de registro de marcas comerciales en Chile ante INAPI. Proceso 100% digital con precios transparentes y garantía de reintento.",
+    "url": "https://demarcas.cl",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Chile"
+    },
+    "serviceType": "Registro de Marcas Comerciales",
+    "priceRange": "$99.990 - $229.990 CLP",
+    "telephone": "",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santiago",
+      "addressCountry": "CL"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "200"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- 1. BARRA URGENCIA -->
+  <div class="urgency-bar" role="banner" aria-label="Oferta especial">
+    <div class="container urgency-bar__inner">
+      <span class="urgency-bar__label">Oferta julio:</span>
+      Registro Completo con 35% descuento — solo hasta el 31 de julio
+      <span class="urgency-bar__countdown" id="countdown" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <!-- 2. HEADER / NAV -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="/" class="header__logo" aria-label="DeMarcas.cl — inicio">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#5b21b6"/>
+          <path d="M8 10h10a6 6 0 0 1 0 12H8V10z" fill="white" fill-opacity="0.95"/>
+          <circle cx="22" cy="16" r="2.5" fill="#c4b5fd"/>
+          <path d="M8 16h8" stroke="#5b21b6" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="header__logo-text">De<span class="header__logo-accent">Marcas</span>.cl</span>
+      </a>
+      <nav class="header__nav" aria-label="Navegación principal">
+        <a href="#como-funciona" class="header__nav-link">¿Cómo funciona?</a>
+        <a href="#precios" class="header__nav-link">Precios</a>
+        <a href="#faq" class="header__nav-link">FAQ</a>
+      </nav>
+      <div class="header__actions">
+        <a href="#precios" class="btn btn--primary">Registrar marca</a>
+        <button class="header__menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <rect x="2" y="5" width="18" height="2" rx="1" fill="currentColor"/>
+            <rect x="2" y="10" width="18" height="2" rx="1" fill="currentColor"/>
+            <rect x="2" y="15" width="18" height="2" rx="1" fill="currentColor"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#como-funciona" class="mobile-menu__link">¿Cómo funciona?</a>
+      <a href="#precios" class="mobile-menu__link">Precios</a>
+      <a href="#faq" class="mobile-menu__link">FAQ</a>
+      <a href="#precios" class="btn btn--primary mobile-menu__cta">Registrar marca</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 3. HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__badge">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          Sin letra chica · Precios claros · 100% online
+        </div>
+        <h1 class="hero__title" id="hero-title">
+          Tu marca registrada en Chile.<br>
+          <span class="text-purple">Sin complicaciones.</span>
+        </h1>
+        <p class="hero__subtitle">
+          Protege el nombre de tu negocio ante INAPI con respaldo legal experto. Proceso simple, precios transparentes, sin sorpresas.
+        </p>
+        <div class="hero__actions">
+          <a href="#precios" class="btn btn--primary btn--lg">Quiero registrar mi marca</a>
+          <a href="#como-funciona" class="btn btn--outline btn--lg">Ver cómo funciona</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TRUST STRIP -->
+    <section class="trust-strip" aria-label="Nuestros compromisos">
+      <div class="container">
+        <ul class="trust-strip__list" role="list">
+          <li class="trust-strip__item">
+            <span class="trust-strip__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" fill="#5b21b6"/>
+              </svg>
+            </span>
+            <span class="trust-strip__text"><strong>4.9</strong> · +200 reseñas</span>
+          </li>
+          <li class="trust-strip__item">
+            <span class="trust-strip__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" fill="#5b21b6"/>
+              </svg>
+            </span>
+            <span class="trust-strip__text"><strong>Garantía</strong> de reintento</span>
+          </li>
+          <li class="trust-strip__item">
+            <span class="trust-strip__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" fill="#5b21b6"/>
+              </svg>
+            </span>
+            <span class="trust-strip__text"><strong>Proceso</strong> 100% digital</span>
+          </li>
+          <li class="trust-strip__item">
+            <span class="trust-strip__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" fill="#5b21b6"/>
+              </svg>
+            </span>
+            <span class="trust-strip__text"><strong>Precio total</strong> sin sorpresas</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. VIDEO / PRESENTACIÓN -->
+    <section class="video-section" aria-labelledby="video-title">
+      <div class="container video-section__inner">
+        <div class="video-placeholder" role="img" aria-label="Video explicativo del proceso de registro de marca">
+          <button class="video-play-btn" aria-label="Reproducir video: Cómo registramos tu marca en Chile paso a paso">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M8 5.14v14l11-7-11-7z" fill="white"/>
+            </svg>
+          </button>
+        </div>
+        <p class="video-section__caption" id="video-title">Cómo registramos tu marca en Chile paso a paso</p>
+      </div>
+    </section>
+
+    <!-- 6. CÓMO FUNCIONA -->
+    <section class="steps" id="como-funciona" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">PROCESO</span>
+          <h2 class="section-title" id="steps-title">Registra tu marca en 3 pasos simples</h2>
+        </div>
+        <div class="steps__grid">
+          <article class="step-card">
+            <span class="step-card__number" aria-hidden="true">01</span>
+            <h3 class="step-card__title">Elige tu plan</h3>
+            <p class="step-card__desc">Selecciona el plan que se ajusta a tu negocio y paga en línea de forma segura.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-card__number" aria-hidden="true">02</span>
+            <h3 class="step-card__title">Nos das los datos</h3>
+            <p class="step-card__desc">Nombre de tu marca, logo si tienes, y qué producto o servicio proteges.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-card__number" aria-hidden="true">03</span>
+            <h3 class="step-card__title">Nosotros gestionamos</h3>
+            <p class="step-card__desc">Presentamos ante INAPI, seguimos el proceso y te mantenemos informado hasta el registro final.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PRECIOS -->
+    <section class="pricing" id="precios" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">PRECIOS</span>
+          <h2 class="section-title" id="pricing-title">3 planes según lo que necesitas</h2>
+          <p class="section-subtitle">Honorarios profesionales — las tasas INAPI se pagan por separado y las mostramos claramente</p>
+        </div>
+        <div class="pricing__grid">
+
+          <!-- Plan Asistido -->
+          <article class="pricing-card">
+            <div class="pricing-card__badge-label">HAZLO TÚ</div>
+            <h3 class="pricing-card__name">Registro Asistido</h3>
+            <p class="pricing-card__desc">Tú presentas ante INAPI. Nosotros te preparamos todo y te guiamos paso a paso.</p>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$99.990</span>
+              <span class="pricing-card__period">honorarios</span>
+            </div>
+            <a href="#plan-asistido" class="btn btn--dark btn--full">Comenzar</a>
+            <ul class="feature-list" role="list">
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Búsqueda previa de similitudes
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Documentos listos para presentar
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Videos tutoriales paso a paso
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Seguimiento de plazos por email
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Chat de soporte
+              </li>
+            </ul>
+          </article>
+
+          <!-- Plan Completo (destacado) -->
+          <article class="pricing-card pricing-card--featured">
+            <div class="pricing-card__popular" aria-label="Plan más elegido">MÁS ELEGIDO</div>
+            <div class="pricing-card__badge-label pricing-card__badge-label--featured">LO HACEMOS POR TI</div>
+            <h3 class="pricing-card__name">Registro Completo</h3>
+            <p class="pricing-card__desc">Presentamos, gestionamos y hacemos el seguimiento completo del proceso por ti.</p>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$129.990</span>
+              <span class="pricing-card__period">honorarios</span>
+            </div>
+            <a href="#plan-completo" class="btn btn--primary btn--full">Registrar ahora</a>
+            <ul class="feature-list" role="list">
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Análisis de registrabilidad
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Definición estratégica de clase
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Presentación ante INAPI
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Gestión del proceso completo
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Panel de seguimiento online
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Notificaciones de hitos
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Garantía de reintento gratis
+              </li>
+            </ul>
+          </article>
+
+          <!-- Plan Blindado -->
+          <article class="pricing-card">
+            <div class="pricing-card__badge-label">MÁXIMA PROTECCIÓN</div>
+            <h3 class="pricing-card__name">Registro Blindado</h3>
+            <p class="pricing-card__desc">Todo lo del Completo más defensa legal ante oposiciones y observaciones.</p>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$229.990</span>
+              <span class="pricing-card__period">honorarios</span>
+            </div>
+            <a href="#plan-blindado" class="btn btn--dark btn--full">Comenzar</a>
+            <ul class="feature-list" role="list">
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Todo del Registro Completo
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Defensa ante oposiciones
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Respuesta a observaciones INAPI
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Abogado asignado personal
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Atención prioritaria
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7.5 7.5-3-3" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Estrategia preventiva
+              </li>
+            </ul>
+          </article>
+
+        </div>
+        <p class="pricing__disclaimer">
+          Los precios no incluyen tasas INAPI ni Diario Oficial. Para 1 marca en 1 clase: costo INAPI aproximado $214.947. Te mostramos el total antes de pagar.
+        </p>
+      </div>
+    </section>
+
+    <!-- 8. GARANTÍA -->
+    <section class="guarantee" aria-labelledby="guarantee-title">
+      <div class="container">
+        <div class="guarantee__inner">
+          <div class="guarantee__icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path fill-rule="evenodd" d="M24 4L8 10v14c0 10.5 6.8 20.3 16 23 9.2-2.7 16-12.5 16-23V10L24 4zm-2 28l-7-7 2.8-2.8L22 26.4l8.2-8.2L33 21l-11 11z" fill="#5b21b6"/>
+            </svg>
+          </div>
+          <div class="guarantee__content">
+            <h2 class="guarantee__title" id="guarantee-title">Garantía de reintento gratuito</h2>
+            <p class="guarantee__desc">Si INAPI no acepta tu marca por razones formales, la volvemos a presentar sin costo adicional. Sin letra chica, sin excusas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. RESEÑAS -->
+    <section class="reviews" id="resenas" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">TESTIMONIOS</span>
+          <h2 class="section-title" id="reviews-title">Emprendedores que ya protegieron su marca</h2>
+        </div>
+        <div class="reviews__summary" aria-label="Calificación promedio">
+          <div class="reviews__stars" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="reviews__summary-text">4.9 de 5 · Basado en +200 reseñas verificadas en Google</p>
+        </div>
+        <div class="reviews__grid">
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 estrellas">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <blockquote class="review-card__text">"Todo clarísimo desde el inicio. El precio que vi fue el que pagué. Mi marca quedó registrada en 6 meses exactos."</blockquote>
+            <cite class="review-card__author">— Valentina M., Santiago</cite>
+          </article>
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 estrellas">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <blockquote class="review-card__text">"Intenté con otra plataforma y me cobraron sin decirme que las tasas eran aparte. Aquí todo fue transparente desde el principio."</blockquote>
+            <cite class="review-card__author">— Felipe R., Emprendedor</cite>
+          </article>
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 estrellas">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <blockquote class="review-card__text">"Súper profesional, me respondieron todas las dudas antes de pagar. Recomiendo 100%."</blockquote>
+            <cite class="review-card__author">— Constanza P., Diseñadora</cite>
+          </article>
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 estrellas">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="#f59e0b"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <blockquote class="review-card__text">"Registré mi marca de cosmética natural sin salir de la casa. El proceso fue simple y rápido."</blockquote>
+            <cite class="review-card__author">— Andrea L., Concepción</cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. BENEFICIOS -->
+    <section class="benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">IMPORTANCIA</span>
+          <h2 class="section-title" id="benefits-title">¿Por qué es urgente registrar tu marca?</h2>
+        </div>
+        <div class="benefits__grid">
+          <article class="benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path fill-rule="evenodd" d="M14 2.333L4.667 5.833v7c0 6.125 3.966 11.858 9.333 13.417 5.367-1.559 9.333-7.292 9.333-13.417v-7L14 2.333zm-1.167 16.334l-4.083-4.084 1.633-1.633 2.45 2.45 4.783-4.783 1.633 1.633-6.416 6.417z" fill="#5b21b6"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Protección legal exclusiva</h3>
+            <p class="benefit-card__desc">Solo tú puedes usar el nombre en tu rubro por 10 años, renovables.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M14 2.333a11.667 11.667 0 100 23.334A11.667 11.667 0 0014 2.333zm1.167 17.5h-2.334v-7h2.334v7zm0-9.333h-2.334V8.167h2.334V10.5z" fill="#5b21b6"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Evita robos y copias</h3>
+            <p class="benefit-card__desc">Sin registro, cualquiera puede quedarse con el nombre de tu negocio.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M23.333 4.667H4.667A2.333 2.333 0 002.333 7v14a2.333 2.333 0 002.334 2.333h18.666A2.333 2.333 0 0025.667 21V7a2.333 2.333 0 00-2.334-2.333zM14 18.667a4.667 4.667 0 110-9.334 4.667 4.667 0 010 9.334zm0-7a2.333 2.333 0 100 4.666 2.333 2.333 0 000-4.666z" fill="#5b21b6"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Aumenta el valor de tu empresa</h3>
+            <p class="benefit-card__desc">Una marca registrada es un activo intangible que suma al patrimonio.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M22.167 4.667H5.833A2.333 2.333 0 003.5 7v4.667a2.333 2.333 0 002.333 2.333h.584v8.167a1.167 1.167 0 001.166 1.166h12.834a1.167 1.167 0 001.166-1.166V14h.584A2.333 2.333 0 0024.5 11.667V7a2.333 2.333 0 00-2.333-2.333zM15.167 20H12.833v-4.667h2.334V20zm4.666 0H17.5v-5.833a1.167 1.167 0 00-1.167-1.167h-4.666a1.167 1.167 0 00-1.167 1.167V20H8.167V14h11.666v6zm2.334-8.333H5.833V7h16.334v4.667z" fill="#5b21b6"/>
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Puedes licenciar o vender</h3>
+            <p class="benefit-card__desc">Solo con marca registrada puedes ceder derechos, franquiciar o exigir regalías.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">PREGUNTAS FRECUENTES</span>
+          <h2 class="section-title" id="faq-title">Lo que la mayoría pregunta</h2>
+        </div>
+        <div class="faq__list">
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              ¿Cuánto demora el registro de marca en Chile?
+              <span class="faq-item__chevron" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>El proceso ante INAPI toma aproximadamente 6 a 8 meses. Si aparecen oposiciones de terceros, puede extenderse un poco más. Nosotros te mantenemos informado en cada etapa.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              ¿Cuánto dura una marca registrada?
+              <span class="faq-item__chevron" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>10 años desde la fecha de aceptación por INAPI. Es renovable indefinidamente por períodos iguales y puede heredarse o transferirse.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              ¿Necesito tener empresa constituida para registrar una marca?
+              <span class="faq-item__chevron" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>No. Cualquier persona natural mayor de edad puede registrar una marca en Chile. También pueden hacerlo empresas, fundaciones y otras personas jurídicas.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              ¿El precio incluye las tasas de INAPI?
+              <span class="faq-item__chevron" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>No — y te lo decimos desde el inicio. Las tasas oficiales (aproximadamente $214.947 para una clase) se pagan directamente a INAPI. Te mostramos el costo total antes de que decidas.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              ¿Qué pasa si INAPI rechaza mi marca?
+              <span class="faq-item__chevron" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Con el Plan Completo y Blindado, si el rechazo es por razones formales, la volvemos a presentar sin costo adicional. Si el rechazo es por razones de fondo (nombre no registrable), te devolvemos el 100% de nuestros honorarios.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              ¿Cómo se realiza el pago?
+              <span class="faq-item__chevron" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>A través de Flow, la plataforma de pagos más usada en Chile. Puedes pagar con tarjeta de crédito, débito o transferencia bancaria. 100% seguro.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              ¿Qué es una "clase" y por qué importa?
+              <span class="faq-item__chevron" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Las marcas se registran por clases según lo que protegen (productos o servicios). Existen 45 clases oficiales. Si tu negocio abarca varias, puedes proteger tu marca en múltiples clases. Nosotros te asesoramos cuáles necesitas.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              ¿Puedo registrar solo el nombre o también el logo?
+              <span class="faq-item__chevron" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Puedes registrar la marca denominativa (solo el nombre), la marca mixta (nombre + logo) o la marca figurativa (solo el logo). Cada opción tiene ventajas según tu estrategia.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. CTA FINAL -->
+    <section class="cta-final" aria-labelledby="cta-final-title">
+      <div class="container cta-final__inner">
+        <h2 class="cta-final__title" id="cta-final-title">Protege tu marca antes que otro lo haga</h2>
+        <p class="cta-final__subtitle">El registro es por orden de llegada. Cada día que esperas es un riesgo real para tu negocio.</p>
+        <a href="#precios" class="btn btn--primary btn--lg">Quiero registrar mi marca ahora</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 13. FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="/" class="footer__logo" aria-label="DeMarcas.cl — inicio">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#5b21b6"/>
+            <path d="M8 10h10a6 6 0 0 1 0 12H8V10z" fill="white" fill-opacity="0.95"/>
+            <circle cx="22" cy="16" r="2.5" fill="#c4b5fd"/>
+            <path d="M8 16h8" stroke="#5b21b6" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="footer__logo-text">De<span class="text-purple">Marcas</span>.cl</span>
+        </a>
+        <p class="footer__tagline">Registro legal de marcas en Chile</p>
+      </div>
+      <div class="footer__col">
+        <nav aria-label="Navegación del footer - información">
+          <a href="#como-funciona" class="footer__link">Cómo funciona</a>
+          <a href="#precios" class="footer__link">Precios</a>
+          <a href="#faq" class="footer__link">FAQ</a>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <nav aria-label="Navegación del footer - legal">
+          <a href="#" class="footer__link">Términos y condiciones</a>
+          <a href="#" class="footer__link">Política de privacidad</a>
+          <a href="#" class="footer__link">Contacto</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copy">© 2026 DeMarcas.cl · Todos los derechos reservados · Santiago, Chile</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
